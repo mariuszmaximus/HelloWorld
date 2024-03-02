@@ -12,7 +12,8 @@ env:
 jobs:
   build:
     name: ${{ matrix.config.name }}
-    runs-on: ${{ matrix.config.os }}
+    # runs-on: ${{ matrix.config.os }}
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
